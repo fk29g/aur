@@ -1,0 +1,13 @@
+pkgbase = hours
+	pkgdesc = A no-frills time tracking toolkit for command line nerds
+	pkgver = 0.3.0
+	pkgrel = 1
+	url = https://tools.dhruvs.space/hours/
+	arch = x86_64
+	license = MIT
+	makedepends = go
+	depends = glibc
+	source = hours-0.3.0.tar.gz::https://github.com/dhth/hours/archive/refs/tags/v0.3.0.tar.gz
+	b2sums = e1c86be43b6181869c5b81dd1d04033b836ff3ca561e77ed7bf0605d3189b40ddd1225e13285cbfab5a13bf03005db78a4d4d7594c6677b9c1d21f8056c5847f
+
+pkgname = hours
