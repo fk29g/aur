@@ -1,7 +1,7 @@
 # Maintainer: Bart Libert <bart plus aur at libert dot email>
 
 pkgname=hours
-pkgver=0.3.0
+pkgver=0.4.0
 pkgrel=1
 pkgdesc='A no-frills time tracking toolkit for command line nerds'
 arch=('x86_64')
@@ -10,7 +10,7 @@ license=('MIT')
 depends=('glibc')
 makedepends=('go')
 source=("$pkgname-$pkgver.tar.gz::https://github.com/dhth/hours/archive/refs/tags/v${pkgver}.tar.gz")
-b2sums=('e1c86be43b6181869c5b81dd1d04033b836ff3ca561e77ed7bf0605d3189b40ddd1225e13285cbfab5a13bf03005db78a4d4d7594c6677b9c1d21f8056c5847f')
+b2sums=('a2c917b4ad8f21a20348fc01b7124cddb9d451ec3ed75b16440419cfe8b0e65b38070fad2a189fa923e5308d6fc4c14a01c20907899226b0de7657957b02a986')
 
 prepare(){
   cd "$pkgname-$pkgver"
