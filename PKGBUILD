@@ -8,6 +8,7 @@ url="https://github.com/sblask-webextensions/webextension-skip-redirect"
 license=("MIT")
 groups=("firefox-addons")
 depends=("firefox")
+conflicts=("firefox-extension-skip-redirect")
 source=("https://addons.mozilla.org/firefox/downloads/file/3920533/skip_redirect-$pkgver.xpi")
 sha256sums=("dbe8950245c1f475c5c1c6daab89c79b83ba4680621c91e80f15be7b09b618ae")
 
