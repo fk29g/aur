@@ -9,6 +9,7 @@ license=("MIT")
 groups=("firefox-addons")
 depends=("firefox")
 makedepends=("npm")
+conflicts=("firefox-extension-skip-redirect-bin")
 source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/${pkgver}.tar.gz"
         "include-icons.patch")
 noextract=("$pkgname-$pkgver.tar.gz")
