@@ -1,0 +1,31 @@
+--- a/Makefile	2025-04-22 11:30:30.000000000 +0200
++++ b/Makefile	2025-05-06 01:27:36.571398206 +0200
+@@ -27,7 +27,7 @@
+ 
+ # Compile netdump, linking dynamically to libnetdump.so
+ $(TARGET): $(OBJ) $(LIB_TARGET)
+-	$(CC) -o $(TARGET) $(OBJ) -L. -lnetdump $(LDFLAGS) -Wl,-rpath,\$$ORIGIN:/usr/local/lib64
++	$(CC) -o $(TARGET) $(OBJ) -L. -lnetdump $(LDFLAGS) -Wl,-rpath,\$$ORIGIN:/usr/lib
+ 
+ # Clean target
+ clean:
+@@ -44,13 +44,13 @@
+ 
+ # Install target: install netdump and libnetdump.so
+ install: $(TARGET) $(LIB_TARGET)
+-	mkdir -p $(DESTDIR)/usr/local/bin
+-	mkdir -p $(DESTDIR)/usr/local/lib64
+-	install -m 0755 $(TARGET) $(DESTDIR)/usr/local/bin/$(TARGET)
+-	install -m 0755 $(LIB_TARGET) $(DESTDIR)/usr/local/lib64/$(LIB_TARGET)
++	mkdir -p $(DESTDIR)/usr/bin
++	mkdir -p $(DESTDIR)/usr/lib
++	install -m 0755 $(TARGET) $(DESTDIR)/usr/bin/$(TARGET)
++	install -m 0755 $(LIB_TARGET) $(DESTDIR)/usr/lib/$(LIB_TARGET)
+ 
+ # Remove target: remove netdump, libnetdump.so and .o files
+ remove:
+ 	make clean
+-	rm -f $(DESTDIR)/usr/local/bin/$(TARGET)
+-	rm -f $(DESTDIR)/usr/local/lib64/$(LIB_TARGET)
++	rm -f $(DESTDIR)/usr/bin/$(TARGET)
++	rm -f $(DESTDIR)/usr/lib/$(LIB_TARGET)
