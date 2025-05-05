@@ -8,7 +8,7 @@ url="https://github.com/sblask-webextensions/webextension-skip-redirect"
 license=("MIT")
 groups=("firefox-addons")
 depends=("firefox")
-makedepends=("npm" "moreutils")
+makedepends=("npm")
 source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/${pkgver}.tar.gz"
         "include-icons.patch")
 noextract=("$pkgname-$pkgver.tar.gz")

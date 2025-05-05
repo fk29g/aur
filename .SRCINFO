@@ -7,7 +7,6 @@ pkgbase = firefox-extension-skip-redirect
 	groups = firefox-addons
 	license = MIT
 	makedepends = npm
-	makedepends = moreutils
 	depends = firefox
 	noextract = firefox-extension-skip-redirect-2.3.6.tar.gz
 	source = firefox-extension-skip-redirect-2.3.6.tar.gz::https://github.com/sblask-webextensions/webextension-skip-redirect/archive/refs/tags/2.3.6.tar.gz
