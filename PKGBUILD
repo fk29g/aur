@@ -9,14 +9,17 @@ license=("MIT")
 grups=("firefox-addons")
 depends=("firefox")
 makedepends=("npm" "moreutils")
-source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/${pkgver}.tar.gz")
+source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/${pkgver}.tar.gz"
+        "include-icons.patch")
 noextract=("$pkgname-$pkgver.tar.gz")
-sha256sums=("1008c461ff2d6e5903db562d9508ce297f91016eaffc2279a6ee770cfd96a50d")
+sha256sums=("1008c461ff2d6e5903db562d9508ce297f91016eaffc2279a6ee770cfd96a50d"
+            "SKIP")
 
 prepare() {
     mkdir -p "$pkgname-$pkgver"
     tar -xf "$pkgname-$pkgver.tar.gz" -C "$pkgname-$pkgver" --strip-components=1
     cd $pkgname-$pkgver
+    patch -p1 < "$srcdir/include-icons.patch"
     npm install
 }
 
