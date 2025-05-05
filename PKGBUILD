@@ -31,4 +31,5 @@ build() {
 package() {
     cd "$pkgname-$pkgver"
     install -Dm 0644 skip_redirect-$pkgver.zip "$pkgdir/usr/lib/firefox/browser/extensions/skipredirect@sblask.xpi"
+    install -Dm 0644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
 }
