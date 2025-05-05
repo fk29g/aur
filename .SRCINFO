@@ -4,6 +4,7 @@ pkgbase = firefox-extension-skip-redirect
 	pkgrel = 1
 	url = https://github.com/sblask-webextensions/webextension-skip-redirect
 	arch = any
+	groups = firefox-addons
 	license = MIT
 	makedepends = npm
 	makedepends = moreutils
