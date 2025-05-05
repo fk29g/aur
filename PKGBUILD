@@ -7,6 +7,7 @@ arch=("x86_64")
 url="https://github.com/jonaburg/nodebro"
 license=("GPL-3.0-only")
 makedepends=("go")
+install="nodebro.install"
 source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz")
 sha256sums=("ff8cd7fac004122e68502d16bb89d9ce2a3382eb49b39ad8988873586a55dbb8")
 
