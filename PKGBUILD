@@ -8,6 +8,7 @@ url="https://addons.mozilla.org/addon/refined-github-/"
 license=("MIT")
 groups=("firefox-addons")
 depends=("firefox>=126.0")
+makedepends=("zip")
 install="$pkgname.install"
 source=("$pkgname-$pkgver.xpi::https://addons.mozilla.org/firefox/downloads/file/4470107/refined_github-$pkgver.xpi"
         "add-id.patch")

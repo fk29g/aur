@@ -7,6 +7,7 @@ pkgbase = firefox-extension-refined-github-bin
 	arch = any
 	groups = firefox-addons
 	license = MIT
+	makedepends = zip
 	depends = firefox>=126.0
 	noextract = firefox-extension-refined-github-bin-25.4.8.xpi
 	source = firefox-extension-refined-github-bin-25.4.8.xpi::https://addons.mozilla.org/firefox/downloads/file/4470107/refined_github-25.4.8.xpi
