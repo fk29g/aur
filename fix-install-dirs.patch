@@ -5,7 +5,7 @@
  # Compile netdump, linking dynamically to libnetdump.so
  $(TARGET): $(OBJ) $(LIB_TARGET)
 -	$(CC) -o $(TARGET) $(OBJ) -L. -lnetdump $(LDFLAGS) -Wl,-rpath,\$$ORIGIN:/usr/local/lib64
-+	$(CC) -o $(TARGET) $(OBJ) -L. -lnetdump $(LDFLAGS) -Wl,-rpath,\$$ORIGIN:/usr/lib
++	$(CC) -o $(TARGET) $(OBJ) -L. -lnetdump $(LDFLAGS) -Wl,-rpath,\$$ORIGIN:/usr/lib/netdump
  
  # Clean target
  clean:
@@ -20,7 +20,7 @@
 +	mkdir -p $(DESTDIR)/usr/bin
 +	mkdir -p $(DESTDIR)/usr/lib
 +	install -m 0755 $(TARGET) $(DESTDIR)/usr/bin/$(TARGET)
-+	install -m 0755 $(LIB_TARGET) $(DESTDIR)/usr/lib/$(LIB_TARGET)
++	install -Dm 0755 $(LIB_TARGET) $(DESTDIR)/usr/lib/netdump/$(LIB_TARGET)
  
  # Remove target: remove netdump, libnetdump.so and .o files
  remove:
@@ -28,4 +28,4 @@
 -	rm -f $(DESTDIR)/usr/local/bin/$(TARGET)
 -	rm -f $(DESTDIR)/usr/local/lib64/$(LIB_TARGET)
 +	rm -f $(DESTDIR)/usr/bin/$(TARGET)
-+	rm -f $(DESTDIR)/usr/lib/$(LIB_TARGET)
++	rm -f $(DESTDIR)/usr/lib/libnetdump/$(LIB_TARGET)
