@@ -11,12 +11,12 @@ source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz")
 sha256sums=("7c386a54a8e73369013fe20a2bd71010548b328ad5fc59ed49c51db42478f654")
 
 build() {
-	cd "$pkgname-$pkgver"
+    cd "$pkgname-$pkgver"
     go build -o reddittui main.go
 }
 
 package() {
-	cd "$pkgname-$pkgver"
+    cd "$pkgname-$pkgver"
     install -Dm 0755 reddittui "${pkgdir}/usr/bin/reddittui"
     install -Dm 0644 LICENSE.txt "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE.txt"
 }
