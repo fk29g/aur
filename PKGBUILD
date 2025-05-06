@@ -26,7 +26,7 @@ prepare() {
 
 build() {
     cd "$pkgname-$pkgver"
-	npm run artifact-create:firefox
+    npm run artifact-create:firefox
 }
 
 package() {
