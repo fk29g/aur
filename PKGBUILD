@@ -12,12 +12,12 @@ source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz")
 sha256sums=("ff8cd7fac004122e68502d16bb89d9ce2a3382eb49b39ad8988873586a55dbb8")
 
 build() {
-	cd "$pkgname-$pkgver"
+    cd "$pkgname-$pkgver"
     go build -o nodebro
 }
 
 package() {
-	cd "$pkgname-$pkgver"
+    cd "$pkgname-$pkgver"
     install -Dm 0755 nodebro "${pkgdir}/usr/bin/nodebro"
     install -Dm 0644 example.config.toml "${pkgdir}/etc/${pkgname}/example.config.toml"
     install -Dm 0644 LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
