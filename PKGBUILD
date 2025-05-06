@@ -13,7 +13,7 @@ source=("$pkgname-$pkgver.xpi::https://addons.mozilla.org/firefox/downloads/file
         "add-id.patch")
 noextract=("$pkgname-$pkgver.xpi")
 sha256sums=("4e07f83622497c5ea1e2fb39f94d910233cdf467a562df4b37dc39adea6fba47"
-            "SKIP")
+            "748b64c23a8e78904fd1b6dc26f7f74d8e8ac9a2a2ee070f4343f01cc82c2c41")
 
 prepare() {
     mkdir "$pkgname-$pkgver"
