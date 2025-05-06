@@ -18,12 +18,12 @@ prepare() {
 }
 
 build() {
-	cd "$pkgname-$pkgver"
-	make
+    cd "$pkgname-$pkgver"
+    make
 }
 
 package() {
-	cd "$pkgname-$pkgver"
+    cd "$pkgname-$pkgver"
     make DESTDIR="$pkgdir" install
     install -Dm 0644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
 }
