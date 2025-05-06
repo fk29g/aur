@@ -1,4 +1,5 @@
 # Maintainer: fk29g <fk29g.uphill912@slmails.com>
+# Maintainer: giorgiopapini
 pkgname=netdump
 pkgver=1.0.0
 pkgrel=2
