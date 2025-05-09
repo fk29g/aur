@@ -1,6 +1,6 @@
 # Maintainer: fk29g <fk29g.uphill912@slmails.com>
 _projectname=exdupe
-pkgname=exdupe-bin
+pkgname=$_projectname-bin
 pkgver=2.1.0
 pkgrel=1
 arch=("x86_64")
