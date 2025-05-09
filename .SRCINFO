@@ -3,6 +3,7 @@ pkgbase = firefox-extension-simplelogin-bin
 	pkgver = 3.0.7
 	pkgrel = 1
 	url = https://github.com/simple-login/browser-extension
+	install = firefox-extension-simplelogin-bin.install
 	arch = any
 	groups = firefox-addons
 	license = MIT

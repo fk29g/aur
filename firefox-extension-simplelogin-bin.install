@@ -1,0 +1,11 @@
+post_install() {
+    echo ">>    "
+    echo ">>    !!IMPORTANT!!"
+    echo ">>    "
+    echo ">>    Please grant permissions to SimpleLogin on"
+    echo ">>    about:addons in Firefox in order for the"
+    echo ">>    extension to function."
+    echo ">>    "
+    echo ">>    !!IMPORTANT!!"
+    echo ">>    "
+}
