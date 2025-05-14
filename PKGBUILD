@@ -1,6 +1,6 @@
 # Maintainer: fk29g <fk29g.uphill912@slmails.com>
 pkgname=reddit-tui
-pkgver=0.3.6
+pkgver=0.3.8
 pkgrel=1
 pkgdesc="Terminal UI for Reddit"
 arch=("x86_64")
@@ -8,7 +8,7 @@ url="https://github.com/tonymajestro/reddit-tui"
 license=("MIT")
 makedepends=("go>=1.16")
 source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz")
-sha256sums=("7c386a54a8e73369013fe20a2bd71010548b328ad5fc59ed49c51db42478f654")
+sha256sums=('781241b998cd87e912efd3af4233b1d8e618ab6ab87eb78b062cd1b699b99cb5')
 
 build() {
     cd "$pkgname-$pkgver"
