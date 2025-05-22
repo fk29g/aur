@@ -7,6 +7,7 @@ arch=("x86_64")
 pkgdesc="Lighthouse for Mobile - audits your Android app and gives a performance score"
 url="https://github.com/bamlab/flashlight/"
 license=("MIT")
+options=("!strip")
 conflicts=("$_projectname")
 source=("$_projectname-$pkgver.zip::$url/releases/download/v$pkgver/${_projectname}-linux.zip"
         "$_projectname-LICENSE::https://raw.githubusercontent.com/bamlab/$_projectname/refs/heads/main/LICENSE")

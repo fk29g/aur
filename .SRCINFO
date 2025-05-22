@@ -6,6 +6,7 @@ pkgbase = flashlight-bin
 	arch = x86_64
 	license = MIT
 	conflicts = flashlight
+	options = !strip
 	source = flashlight-0.18.0.zip::https://github.com/bamlab/flashlight//releases/download/v0.18.0/flashlight-linux.zip
 	source = flashlight-LICENSE::https://raw.githubusercontent.com/bamlab/flashlight/refs/heads/main/LICENSE
 	b2sums = 65dab92a466d5bcb129fbb7a8ffd57cc3b3430f5bf4916f23d227002bd953ac60c9bbfa524c7ef291c12ec123429b6b51c2219a94a2b56daa14978350cf36196
