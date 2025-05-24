@@ -11,7 +11,7 @@ makedepends=("go")
 provides=("clidle")
 conflicts=("clidle")
 source=("$pkgname-$pkgver.tar.gz::$url/releases/download/v$pkgver/clidle_Linux_x86_64.tar.gz")
-b2sums=("SKIP")
+b2sums=("ec185142afb4a8cad523881a7db0c2cdcdf2a5e97d38d5662b2eb5cbeb32721bd7b80d6c7fdd67c62e973b0e5c2a9638ddeb36ecf8cf752cdd4791bbf90f3aa6")
 
 package() {
     install -Dm 0755 clidle "$pkgdir/usr/bin/clidle"
