@@ -2,13 +2,12 @@
 _projectname=tmux-sessionizer
 pkgname=$_projectname-bin
 pkgver=0.4.5
-pkgrel=2
+pkgrel=3
 pkgdesc="A tool for opening git repositories as tmux sessions"
 arch=("x86_64")
 url="https://github.com/jrmoulton/tmux-sessionizer"
 license=("MIT")
 depends=("tmux")
-makedepends=("rust")
 provides=("$_projectname")
 conflicts=("$_projectname")
 source=("$pkgname-$pkgver.tar.gz::$url/releases/download/v$pkgver/$_projectname-x86_64-unknown-linux-gnu.tar.xz")
