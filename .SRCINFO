@@ -1,11 +1,13 @@
 pkgbase = reddit-tui
 	pkgdesc = Terminal UI for Reddit
 	pkgver = 0.3.8
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/tonymajestro/reddit-tui
 	arch = x86_64
 	license = MIT
 	makedepends = go>=1.16
+	provides = reddit-tui
+	conflicts = reddit-tui
 	source = reddit-tui-0.3.8.tar.gz::https://github.com/tonymajestro/reddit-tui/archive/refs/tags/v0.3.8.tar.gz
 	sha256sums = 781241b998cd87e912efd3af4233b1d8e618ab6ab87eb78b062cd1b699b99cb5
 
