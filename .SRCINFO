@@ -1,0 +1,13 @@
+pkgbase = reddit-tui-bin
+	pkgdesc = Terminal UI for Reddit
+	pkgver = 0.3.8
+	pkgrel = 1
+	url = https://github.com/tonymajestro/reddit-tui
+	arch = x86_64
+	license = MIT
+	provides = reddit-tui
+	conflicts = reddit-tui
+	source = reddit-tui-0.3.8.tar.gz::https://github.com/tonymajestro/reddit-tui/releases/download/v0.3.8/reddit-tui_Linux_x86_64.tar.gz
+	sha256sums = SKIP
+
+pkgname = reddit-tui-bin
