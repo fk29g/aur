@@ -1,7 +1,7 @@
 # Maintainer: fk29g <fk29g.uphill912@slmails.com>
 pkgname=gitnapped
 pkgver=0.1.4
-pkgrel=2
+pkgrel=3
 pkgdesc="Find out why you didn’t sleep"
 arch=("x86_64")
 url="https://github.com/Solexma/gitnapped"
@@ -21,4 +21,5 @@ package() {
     cd "$pkgname-$pkgver"
     install -Dm 0755 target/release/gitnapped "$pkgdir/usr/bin/gitnapped"
     install -Dm 0644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+    install -Dm 0644 README.md "$pkgdir/usr/share/doc/$pkgname/README.md"
 }
