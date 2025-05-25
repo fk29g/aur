@@ -1,7 +1,7 @@
 # Maintainer: fk29g <fk29g.uphill912@slmails.com>
 pkgname=reddit-tui
 pkgver=0.3.8
-pkgrel=2
+pkgrel=3
 pkgdesc="Terminal UI for Reddit"
 arch=("x86_64")
 url="https://github.com/tonymajestro/reddit-tui"
@@ -21,4 +21,5 @@ package() {
     cd "$pkgname-$pkgver"
     install -Dm 0755 reddittui "${pkgdir}/usr/bin/reddittui"
     install -Dm 0644 LICENSE.txt "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE.txt"
+    install -Dm 0644 README.md "${pkgdir}/usr/share/doc/${pkgname}/README.md"
 }
