@@ -8,6 +8,6 @@ pkgbase = reddit-tui-bin
 	provides = reddit-tui
 	conflicts = reddit-tui
 	source = reddit-tui-0.3.8.tar.gz::https://github.com/tonymajestro/reddit-tui/releases/download/v0.3.8/reddit-tui_Linux_x86_64.tar.gz
-	sha256sums = SKIP
+	b2sums = b39df369573cac821859d6c3cdfd09b4ea23aebc3f9da7eca78fbbb665d5e9dfb0b96ca2c9d2fa7d626d192b6a5d40e571ad8511bd056a35959e26c9056bd8f4
 
 pkgname = reddit-tui-bin

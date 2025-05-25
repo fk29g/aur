@@ -10,7 +10,7 @@ license=("MIT")
 provides=("reddit-tui")
 conflicts=("reddit-tui")
 source=("$_projectname-$pkgver.tar.gz::$url/releases/download/v$pkgver/${_projectname}_Linux_x86_64.tar.gz")
-sha256sums=('SKIP')
+b2sums=('b39df369573cac821859d6c3cdfd09b4ea23aebc3f9da7eca78fbbb665d5e9dfb0b96ca2c9d2fa7d626d192b6a5d40e571ad8511bd056a35959e26c9056bd8f4')
 
 package() {
     install -Dm 0755 reddittui "${pkgdir}/usr/bin/reddittui"
