@@ -1,7 +1,7 @@
-# Maintainer: Bart Libert <bart plus aur at libert dot email>
-
+# Maintainer: fk29g <fk29g.uphill912@slmails.com>
+# Contributor: Bart Libert <bart plus aur at libert dot email>
 pkgname=hours
-pkgver=0.4.1
+pkgver=0.5.0
 pkgrel=1
 pkgdesc='A no-frills time tracking toolkit for command line nerds'
 arch=('x86_64')
@@ -10,25 +10,25 @@ license=('MIT')
 depends=('glibc')
 makedepends=('go')
 source=("$pkgname-$pkgver.tar.gz::https://github.com/dhth/hours/archive/refs/tags/v${pkgver}.tar.gz")
-b2sums=('aaf8370e48260a4b9ef6a9208f0b988dea49da92bac27473a21b5c0b68cfb487ef9bc55c5d472c7d85b294001e3f0c5b671dc828074bd9c34e07ae2bf245f979')
+b2sums=('8bc7fb78f12e0aa94465534b354e6a331c12d9a871035d3ff14b08e247be259f21cf026f855384afb3c939d17309184c2145d16cf45ee905553c5c29c848840b')
 
 prepare(){
-  cd "$pkgname-$pkgver"
-  mkdir -p build/
+    cd "$pkgname-$pkgver"
+    mkdir -p build/
 }
 
 build() {
-  cd "$pkgname-$pkgver"
-  export CGO_CPPFLAGS="${CPPFLAGS}"
-  export CGO_CFLAGS="${CFLAGS}"
-  export CGO_CXXFLAGS="${CXXFLAGS}"
-  export CGO_LDFLAGS="${LDFLAGS}"
-  export GOFLAGS="-buildmode=pie -trimpath -ldflags=-linkmode=external -mod=readonly -modcacherw"
-  go build -o build
+    cd "$pkgname-$pkgver"
+    export CGO_CPPFLAGS="${CPPFLAGS}"
+    export CGO_CFLAGS="${CFLAGS}"
+    export CGO_CXXFLAGS="${CXXFLAGS}"
+    export CGO_LDFLAGS="${LDFLAGS}"
+    export GOFLAGS="-buildmode=pie -trimpath -ldflags=-linkmode=external -mod=readonly -modcacherw"
+    go build -o build
 }
 
 package() {
-  cd "$pkgname-$pkgver"
-  install -Dm755 build/$pkgname "$pkgdir"/usr/bin/$pkgname
-  install -Dm644 LICENSE "$pkgdir"/usr/share/licenses/$pkgname/LICENSE
+    cd "$pkgname-$pkgver"
+    install -Dm755 build/$pkgname "$pkgdir"/usr/bin/$pkgname
+    install -Dm644 LICENSE "$pkgdir"/usr/share/licenses/$pkgname/LICENSE
 }
