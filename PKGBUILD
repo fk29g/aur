@@ -8,6 +8,8 @@ arch=('x86_64')
 url='https://tools.dhruvs.space/hours/'
 license=('MIT')
 makedepends=('go')
+provides=("hours")
+conflicts=("hours")
 source=("$pkgname-$pkgver.tar.gz::https://github.com/dhth/hours/archive/refs/tags/v${pkgver}.tar.gz")
 b2sums=('8bc7fb78f12e0aa94465534b354e6a331c12d9a871035d3ff14b08e247be259f21cf026f855384afb3c939d17309184c2145d16cf45ee905553c5c29c848840b')
 
