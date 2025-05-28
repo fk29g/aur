@@ -1,7 +1,7 @@
 # Maintainer: fk29g <fk29g.uphill912@slmails.com>
 _projectname=reddit-tui
 pkgname=$_projectname-bin
-pkgver=0.3.8
+pkgver=0.3.9
 pkgrel=1
 pkgdesc="Terminal UI for Reddit"
 arch=("x86_64")
@@ -10,7 +10,7 @@ license=("MIT")
 provides=("reddit-tui")
 conflicts=("reddit-tui")
 source=("$_projectname-$pkgver.tar.gz::$url/releases/download/v$pkgver/${_projectname}_Linux_x86_64.tar.gz")
-b2sums=('b39df369573cac821859d6c3cdfd09b4ea23aebc3f9da7eca78fbbb665d5e9dfb0b96ca2c9d2fa7d626d192b6a5d40e571ad8511bd056a35959e26c9056bd8f4')
+b2sums=('c9a7c682b743f332a6430c621ab2eea21065482a0a8a755d97f89cad4762deb112fa567603e0136521665327b011b8912713122d80bec31a721264745126b438')
 
 package() {
     install -Dm 0755 reddittui "${pkgdir}/usr/bin/reddittui"
