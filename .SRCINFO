@@ -1,7 +1,7 @@
 pkgbase = reddit-tui-bin
 	pkgdesc = Terminal UI for Reddit
 	pkgver = 0.3.9
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/tonymajestro/reddit-tui
 	arch = x86_64
 	license = MIT
