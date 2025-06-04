@@ -1,11 +1,12 @@
 # Maintainer: fk29g <fk29g.uphill912@slmails.com>
 pkgname=gobw
 pkgver=1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Bitwarden TUI written in Go"
 arch=("x86_64")
 url="https://github.com/007Psycho007/gobw"
 license=("GPL-3.0-only")
+depends=("bitwarden-cli")
 makedepends=("go")
 conflicts=("gobw")
 source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/$pkgver.tar.gz")
