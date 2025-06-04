@@ -2,11 +2,12 @@
 _projectname=gobw
 pkgname=$_projectname-bin
 pkgver=1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Bitwarden TUI written in Go"
 arch=("x86_64")
 url="https://github.com/007Psycho007/gobw"
 license=("GPL-3.0-only")
+depends=("bitwarden-cli")
 provides=("gobw")
 conflicts=("gobw")
 source=("$_projectname-$pkgver.tar.gz::$url/releases/download/$pkgver/${_projectname}_${pkgver}_linux_amd64.tar.gz")
