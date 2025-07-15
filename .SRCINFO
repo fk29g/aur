@@ -1,19 +1,19 @@
 pkgbase = podman-tui-bin
 	pkgdesc = Podman Terminal UI
-	pkgver = 1.6.1
+	pkgver = 1.7.0
 	pkgrel = 1
 	url = https://github.com/containers/podman-tui
 	arch = x86_64
 	license = Apache-2.0
 	provides = podman-tui
 	conflicts = podman-tui
-	source = podman-tui-1.6.1.zip::https://github.com/containers/podman-tui/releases/download/v1.6.1/podman-tui-release-linux_amd64.zip
-	source = podman-tui-LICENSE::https://raw.githubusercontent.com/containers/podman-tui/refs/tags/v1.6.1/LICENSE
-	source = podman-tui-README::https://raw.githubusercontent.com/containers/podman-tui/refs/tags/v1.6.1/docs/README.md
-	source = podman-tui-install::https://raw.githubusercontent.com/containers/podman-tui/refs/tags/v1.6.1/docs/install.md
-	b2sums = cd389cbecb70da79693dc44fef3226e9023f48cdea05330331cf8ee8fa1bc9063ba11f50d613c4db7289fb6600a456956aace9302c9b3d15005eea32f2b23d4f
+	source = podman-tui-1.7.0.zip::https://github.com/containers/podman-tui/releases/download/v1.7.0/podman-tui-release-linux_amd64.zip
+	source = podman-tui-LICENSE::https://raw.githubusercontent.com/containers/podman-tui/refs/tags/v1.7.0/LICENSE
+	source = podman-tui-README::https://raw.githubusercontent.com/containers/podman-tui/refs/tags/v1.7.0/docs/README.md
+	source = podman-tui-install::https://raw.githubusercontent.com/containers/podman-tui/refs/tags/v1.7.0/docs/install.md
+	b2sums = 7eb2bd661d8cd3e63abe26ce0ea0296e035a59b53f5dc9eeb8526ee79d4b7047362371a1c25a7dcbdcbd7e3b8743e8aea251e1928fdc06aaa15e82f7f0aeba62
 	b2sums = 43452dd4216bba835bff542c02fcd0a80b77fef97a6f1042adcbbbcf312bb856b0707c35b2f1af356e0b4262e501a159f06bf1f947f182d0023cdd4aefbd8a85
 	b2sums = cef3fb0a613eadcabead86a00c809426f16400fda46ba19dde5d1d295606ea5b38a1fe834ded2e166c55bf2bcf170da4c2b707170a089d2176fcbda5230442b2
-	b2sums = b1d270a0ff93296c05925d6a0a0777336d8e6547733b5fa81256113e9cfaee76b3ab7c6cb3ca74a03e5cd30e155ceb6cc95486efb48f2e07218c290f5ea4b2a0
+	b2sums = 0b4405543941caad7e29dee704f4345409500dd0b008b54ea3d40c07320f60d1f18fb9d0522c1ef4b11c2e60b68764baec741e4105e7fea947bc87aa8849dc96
 
 pkgname = podman-tui-bin
