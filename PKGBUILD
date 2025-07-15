@@ -1,6 +1,6 @@
 # Maintainer: fk29g <fk29g.uphill912@slmails.com>
 pkgname=firefox-extension-refined-github-bin
-pkgver=25.5.18
+pkgver=25.7.1
 pkgrel=1
 pkgdesc="Simplifies the GitHub interface and adds many useful features"
 arch=("any")
@@ -15,8 +15,8 @@ source=("$pkgname-$pkgver.xpi::https://addons.mozilla.org/firefox/downloads/file
         "fix-version.patch")
 noextract=("$pkgname-$pkgver.xpi")
 sha256sums=('4e07f83622497c5ea1e2fb39f94d910233cdf467a562df4b37dc39adea6fba47'
-            '748b64c23a8e78904fd1b6dc26f7f74d8e8ac9a2a2ee070f4343f01cc82c2c41'
-            'a37a931141b9465285ade267b042ac506556cf79f19e211ee18043718dd9b53b')
+            '63f81ef3d15dcbe9fef8903ba704f0549f64f34e50e0b0491493db4d5473c852'
+            'a18fb6ffacc87ea802cc24d294084d5a600c0bdb1aa14fc0cc70dd5ab12e1a1a')
 
 prepare() {
     mkdir "$pkgname-$pkgver"
