@@ -1,30 +1,27 @@
 # Maintainer: fk29g <fk29g.uphill912@slmails.com>
 # Maintainer: giorgiopapini <papini.computing746@slmail.me>
 pkgname=netdump
-pkgver=1.0.0
-pkgrel=2
+pkgver=1.0.1
+pkgrel=1
 pkgdesc="Network packet analyzer supporting real-time and offline analysis with ASCII visualization"
 arch=("x86_64")
 url="https://github.com/giorgiopapini/netdump"
 license=("GPL-3.0-only")
 depends=("libpcap")
-source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/$pkgver.tar.gz"
-        "fix-install-dirs.patch")
-sha256sums=('a773e2f2d9aab2c7444886aa23b77371ce4d8ec269af6dc6edb5b071c4c3990d'
-            '4ade65fde68dea6f894e75eb7e0a6aa4862776d640cc9643a0e078aa29714320')
-
-prepare() {
-    cd "$pkgname-$pkgver"
-    patch -p1 < "$srcdir/fix-install-dirs.patch"
-}
+source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/$pkgver.tar.gz")
+sha256sums=('050b225a198478ef99506ef308e0b327912566546bef70081cc1ef368eebdfdc')
+_PREFIX=/usr
+_LIBDIR="${_PREFIX}/lib"
 
 build() {
     cd "$pkgname-$pkgver"
-    make
+    LIBDIR="$LIBDIR" make
 }
 
 package() {
     cd "$pkgname-$pkgver"
-    make DESTDIR="$pkgdir" install
+    mkdir -p "${pkgdir}${_PREFIX}/bin"
+    mkdir "${pkgdir}${_PREFIX}/lib"
+    make PREFIX="$_PREFIX" DESTDIR="$pkgdir" LIBDIR="$_LIBDIR" install
     install -Dm 0644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
 }
