@@ -8,6 +8,7 @@ pkgbase = xtool-appimage
 	license = MIT
 	depends = swift-bin
 	depends = usbmuxd
+	depends = fuse2
 	provides = xtool
 	conflicts = xtool
 	noextract = xtool.AppImage
