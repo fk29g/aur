@@ -1,0 +1,11 @@
+--- a/package.json  2025-05-05 16:56:02.768552406 +0200
++++ b/package.json	2025-05-05 16:56:12.964278374 +0200
+@@ -15,7 +15,7 @@
+     },
+     "scripts": {
+         "artifact-create:chrome": "web-ext build --artifacts-dir . --ignore-files bin screenshots package.json icon.fodg *.dat",
+-        "artifact-create:firefox": "web-ext build --artifacts-dir . --ignore-files bin screenshots package.json icon.fodg *.dat *.png browser-polyfill.js",
++        "artifact-create:firefox": "web-ext build --artifacts-dir . --ignore-files bin screenshots package.json icon.fodg *.dat browser-polyfill.js",
+         "artifact-rename:chrome": "VERSION=$(jq --raw-output '.version' manifest.json); rename \"s/.zip$/-chrome.zip/\"  *$VERSION.zip",
+         "artifact-rename:firefox": "VERSION=$(jq --raw-output '.version' manifest.json); rename \"s/.zip$/-firefox.zip/\" *$VERSION.zip",
+         "build": "git add --all; rm *.zip; npm run modify:chrome && npm run artifact-create:chrome && npm run artifact-rename:chrome && git checkout -- . && npm run modify:firefox && npm run artifact-create:firefox && npm run artifact-rename:firefox && git checkout -- .",
