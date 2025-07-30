@@ -2,7 +2,7 @@
 _projectname=meow
 pkgname=$_projectname-nvim
 pkgver=1.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc="cat alternative using Neovim for highlighting and configuration"
 arch=("x86_64")
 url="https://github.com/datsfilipe/$_projectname"
