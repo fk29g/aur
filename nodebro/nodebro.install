@@ -1,0 +1,10 @@
+post_install() {
+    echo ">>    example.config.toml placed in /etc/nodebro/"
+    echo ">>    Copy to ~/.config/nodebro in order to use:"
+    echo ">>    "
+    echo ">>    mkdir -p ~/.config/nodebro"
+    echo ">>    cp example.config.toml ~/.config/nodebro/config"
+    echo ">>    "
+    echo ">>    Include your PAT from GitHub in order to not get"
+    echo ">>    rate limited for such simple queries :)"
+}
