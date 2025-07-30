@@ -13,12 +13,12 @@ source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz")
 b2sums=("3633920f46b8c18b8944de785c6ccb4e201e29bb76a73bef27e2bdfbfd73634e17b54f8d0b1da18bfc925c5e9f49dfb169e768186d931bdde5fda9427415ab14")
 
 build() {
-	cd "$pkgname-$pkgver"
+    cd "$pkgname-$pkgver"
     go build -o goful
 }
 
 package() {
-	cd "$pkgname-$pkgver"
+    cd "$pkgname-$pkgver"
     install -Dm 0755 goful "$pkgdir/usr/bin/goful"
     install -Dm 0644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
 }
