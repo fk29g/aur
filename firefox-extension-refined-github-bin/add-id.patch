@@ -1,0 +1,11 @@
+--- a/manifest.json
++++ b/manifest.json
+@@ -8,7 +8,7 @@
+   "minimum_chrome_version": "123",
+   "browser_specific_settings": {
+     "gecko": {
+-      "id": "{a4c4eda4-fb84-4a84-b4a1-f7c1cbf2a1ad}",
++      "id": "addon@refined-github",
+       "strict_min_version": "126.0"
+     },
+     "gecko_android": {
